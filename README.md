@@ -1,1 +1,1 @@
-# DS10-Python-HW
+# DS10 Python Notebooks with homework exercises
