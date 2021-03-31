@@ -1,0 +1,15 @@
+# Book settings
+title: DS10 Homeworks
+author: DS10
+
+latex:
+  latex_documents:
+    targetname: book.tex
+
+execute:
+  execute_notebooks: 'off'
+
+repository:
+  url: https://github.com/stat10/DS10-Python-HW
+html:
+  use_repository_button: true

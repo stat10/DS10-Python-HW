@@ -1,0 +1,12 @@
+file: README
+sections:
+- file: HW01_variables.ipynb
+- file: HW02_times.ipynb
+- file: HW03_arrays.ipynb
+- file: HW04_loops.ipynb
+- file: HW05_dictionaries.ipynb
+- file: HW06_plotting.ipynb
+- file: HW07_dataframes.ipynb
+- file: HW08_distributions.ipynb
+- file: HW09_relationships.ipynb
+- file: HW10_regression.ipynb
