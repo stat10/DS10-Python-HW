@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 06 Exercises &#8212; DS10 Homeworks</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Homework 07 Exercises" href="HW07_dataframes.html" />
+    <link rel="prev" title="Homework 05 Exercises" href="HW05_dictionaries.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">DS10 Homeworks</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="README.html">
+   DS10 Homeworks
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW01_variables.html">
+   Instructions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW01_variables.html#homework-01-exercises">
+   Homework 01 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW01_variables.html#instructions-for-submitting-the-hw-notebook">
+   Instructions for submitting the HW notebook
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW02_times.html">
+   Homework 02 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW03_arrays.html">
+   Homework 03 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW04_loops.html">
+   Homework 04 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW05_dictionaries.html">
+   Homework 05 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Homework 06 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW07_dataframes.html">
+   Homework 07 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW08_distributions.html">
+   Homework 08 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW09_relationships.html">
+   Homework 09 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW10_regression.html">
+   Homework 10 Exercises
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/HW06_plotting.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/stat10/DS10-Python-HW"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/stat10/DS10-Python-HW/master?urlpath=tree/HW06_plotting.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="homework-06-exercises">
+<h1>Homework 06 Exercises<a class="headerlink" href="#homework-06-exercises" title="Permalink to this headline">¶</a></h1>
+<p>The following exercises are based on the material from Lab 6. Feel free to open the Python notebook for <a class="reference external" href="https://colab.research.google.com/github/AllenDowney/ElementsOfDataScience/blob/master/06_plotting.ipynb">Lab 6</a> for reference. You will need to import the <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> library for this. You might also need <code class="docutils literal notranslate"><span class="pre">numpy</span></code>.</p>
+<p><strong>Exercise 1:</strong> In the last Python homework (HW05_dictionaries) we generated a dictionary containing the ages of the last 7 US Presidents (from Trump to Carter) when they took office. In this exercise, we want to visualize that data. One possible way to visualize this data is to generate a bar plot, with a bar for each President and the length of the bar indicating their age when they took office. We want to create a visualization like the one shown below.
+<img alt="alt text" src="https://raw.githubusercontent.com/stat10/DS10-Python-HW/master/Images/plot6.png" /></p>
+<p><strong>a:</strong> Create the dictionary called <code class="docutils literal notranslate"><span class="pre">pres_age</span></code> from the HW05 to begin. Then create two lists, the first called <code class="docutils literal notranslate"><span class="pre">ages</span></code> that contains the values and the second called <code class="docutils literal notranslate"><span class="pre">names</span></code> that contains the keys of <code class="docutils literal notranslate"><span class="pre">pres_age</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>b:</strong> Next, generate a bar plot, using a function from <code class="docutils literal notranslate"><span class="pre">pyplot</span></code> called <code class="docutils literal notranslate"><span class="pre">bar</span></code>. Similar to <code class="docutils literal notranslate"><span class="pre">plot</span></code>, you can provide arguments to this function that determine the values for the x and y axes. In our case here, our x values are in the <code class="docutils literal notranslate"><span class="pre">names</span></code> list and the y values are in the <code class="docutils literal notranslate"><span class="pre">ages</span></code> list. Like in the Lab examples, you can suppress the result from the <code class="docutils literal notranslate"><span class="pre">bar</span></code> function by putting a semi-colon at the end. Your output should look like the image below.
+<img alt="alt text" src="https://raw.githubusercontent.com/stat10/DS10-Python-HW/master/Images/plot1.png" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution </span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>b:</strong> As you should have noticed, the names along the x axis overlap, we can fix this overlap by creating a horizontal bar plot. Generate a horizontal bar plot using the function <code class="docutils literal notranslate"><span class="pre">barh</span></code>. Also, add a label to your x axis called “Age”. Your output should look like the image below.
+<img alt="alt text" src="https://raw.githubusercontent.com/stat10/DS10-Python-HW/master/Images/plot2.png" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>c:</strong> Now, to make the plot look better follow the instructions below. Remember to copy the two lines of code from the previous part (<em>i.e.</em>, the <code class="docutils literal notranslate"><span class="pre">barh</span></code> and the label for the x axis). The end result after following the instructions below should look like the image below.
+<img alt="alt text" src="https://raw.githubusercontent.com/stat10/DS10-Python-HW/master/Images/plot3.png" /></p>
+<ol class="simple">
+<li><p>Remove the box in which the bars are displayed. Use the function from <code class="docutils literal notranslate"><span class="pre">pyplot</span></code> called <code class="docutils literal notranslate"><span class="pre">box</span></code> to do this. It takes Boolean arguments (<code class="docutils literal notranslate"><span class="pre">True</span></code>/<code class="docutils literal notranslate"><span class="pre">False</span></code>) to indicate the visibility of the box.</p></li>
+<li><p>Remove the tick marks from both the x and y axes. Use the function <code class="docutils literal notranslate"><span class="pre">tick_params</span></code>. You can find the documentation for this function <a class="reference external" href="https://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.tick_params">here</a>. Using the documentation, figure out the values of the arguments.</p></li>
+<li><p>Finally, add white grid lines along the major x axis ticks. Use the function <code class="docutils literal notranslate"><span class="pre">grid</span></code>. Again, use the <a class="reference external" href="https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.grid.html">documentation</a> to figure out the arguments you need to make the end result look like the image above.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>d:</strong> You might notice that there seems to be something in common in the “younger” Presidents as compared to the “older”. The recent “younger” Presidents are from the Democratic Party. It would be nice to see this information in the visual.</p>
+<p>Create a list called <code class="docutils literal notranslate"><span class="pre">party_color</span></code> with strings coressponding to the color of the party (<em>i.e.</em>, “red” for the Republican and “blue” for the Democratic Presidents) of each president from Trump to Carter and use this list as an argument for <code class="docutils literal notranslate"><span class="pre">color</span></code> inside the <code class="docutils literal notranslate"><span class="pre">barh</span></code> function. Your output should look like the image below.
+<em>Note:</em> Copy all of the code from your previous cell and only add the <code class="docutils literal notranslate"><span class="pre">color</span></code> argument to the <code class="docutils literal notranslate"><span class="pre">barh</span></code> function.
+<img alt="alt text" src="https://raw.githubusercontent.com/stat10/DS10-Python-HW/master/Images/plot4.png" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>e:</strong> The “red” and “blue” colors in the plot above are quite over-saturated. <code class="docutils literal notranslate"><span class="pre">Matplotlib</span></code> recognizes a large number of different colors as you might find in <a class="reference external" href="https://matplotlib.org/tutorials/colors/colors.html">this page</a>. One option to keep the color names human readable is to use the colors specified in the <a class="reference external" href="https://xkcd.com/color/rgb/">xkcd color survey</a>. The way to specify these colors is to prefix the color name by “xkcd:” (<em>e.g.</em>, ‘xkcd:sky blue’) in the string used to specify the color argument.</p>
+<p>Modify the <code class="docutils literal notranslate"><span class="pre">party_color</span></code> list such that the “red” string is now “xkcd:light red” and the “blue” string is “xkcd:cerulean” and re-plot the figure. The plot should look like the image below.
+<img alt="alt text" src="https://raw.githubusercontent.com/stat10/DS10-Python-HW/master/Images/plot5.png" />
+<strong>Bonus points to those who can modify the list using a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop!</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>f:</strong> Add a title that conveys what the plot is displaying. Also, add a legend that displays a red patch next to the word Republican and a blue patch next to Democratic. Lastly, flip the y axis so that the most recent President is at the top. The end result should look like the image below.
+<img alt="alt text" src="https://raw.githubusercontent.com/stat10/DS10-Python-HW/master/Images/plot6.png" /></p>
+<p><em>Hints for adding the legend (also see <a class="reference external" href="https://matplotlib.org/tutorials/intermediate/legend_guide.html">this link</a>):</em></p>
+<ul class="simple">
+<li><p>Create patches for the legend. To create patches import <code class="docutils literal notranslate"><span class="pre">matplolib.patches</span></code> and use a function defined in it called <code class="docutils literal notranslate"><span class="pre">Patch</span></code>. In the arguments for <code class="docutils literal notranslate"><span class="pre">Patch</span></code> you can specify the color as well as the label.</p></li>
+<li><p>Once you have created a red and a blue patch, you can call the function <code class="docutils literal notranslate"><span class="pre">legend</span></code> in <code class="docutils literal notranslate"><span class="pre">pyplot</span></code> and provide those patches as a list for the argument <code class="docutils literal notranslate"><span class="pre">handles</span></code>, for example, <code class="docutils literal notranslate"><span class="pre">plt.legend(handles=[red_patch,</span> <span class="pre">blue_patch])</span></code>.</p></li>
+<li><p>To position your legend appropriately, use the arguments <code class="docutils literal notranslate"><span class="pre">bbox_to_anchor</span></code> (bounding box to anchor) and <code class="docutils literal notranslate"><span class="pre">loc</span></code> (location). <code class="docutils literal notranslate"><span class="pre">bbox_to_anchor</span></code> takes in a tuple corresponding to a normalized location in the plot frame (<em>e.g.</em>, <code class="docutils literal notranslate"><span class="pre">bbox_to_anchor=(0.5,</span> <span class="pre">0.5)</span></code> is the center of the plot frame, <code class="docutils literal notranslate"><span class="pre">bbox_to_anchor=(1.5,</span> <span class="pre">0.5)</span></code> is outside the frame along x and center of frame along y). <code class="docutils literal notranslate"><span class="pre">loc</span></code> specifies which point of the bounding box should be at the location specified by <code class="docutils literal notranslate"><span class="pre">bbox_to_anchor</span></code>. Play around with these two arguments to see the results and try to get a result close to the image above.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Exercise 2:</strong> In the Python HW05, we calculated the miles per gallon of a Yamaha scooter using data that recorded the distance covered at each gas fill. Plot the miles per gallon you calculated as individual markers without a line connecting them. Also, plot a dotted line indicating the average miles per gallon you also calculated in the previous HW. Make your final plot look similar to the image below. <em>Note:</em> You can copy relevant code from the last HW.
+<img alt="alt text" src="https://raw.githubusercontent.com/stat10/DS10-Python-HW/master/Images/plot7.png" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution (from HW05)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution (plot)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="HW05_dictionaries.html" title="previous page">Homework 05 Exercises</a>
+    <a class='right-next' id="next-link" href="HW07_dataframes.html" title="next page">Homework 07 Exercises</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By DS10<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

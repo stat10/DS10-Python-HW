@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 04 Exercises &#8212; DS10 Homeworks</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Homework 05 Exercises" href="HW05_dictionaries.html" />
+    <link rel="prev" title="Homework 03 Exercises" href="HW03_arrays.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">DS10 Homeworks</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="README.html">
+   DS10 Homeworks
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW01_variables.html">
+   Instructions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW01_variables.html#homework-01-exercises">
+   Homework 01 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW01_variables.html#instructions-for-submitting-the-hw-notebook">
+   Instructions for submitting the HW notebook
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW02_times.html">
+   Homework 02 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW03_arrays.html">
+   Homework 03 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Homework 04 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW05_dictionaries.html">
+   Homework 05 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW06_plotting.html">
+   Homework 06 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW07_dataframes.html">
+   Homework 07 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW08_distributions.html">
+   Homework 08 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW09_relationships.html">
+   Homework 09 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW10_regression.html">
+   Homework 10 Exercises
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/HW04_loops.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/stat10/DS10-Python-HW"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/stat10/DS10-Python-HW/master?urlpath=tree/HW04_loops.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="homework-04-exercises">
+<h1>Homework 04 Exercises<a class="headerlink" href="#homework-04-exercises" title="Permalink to this headline">¶</a></h1>
+<p>The following exercises are based on the material from Lab 4. Feel free to open the Python notebook for <a class="reference external" href="https://colab.research.google.com/github/AllenDowney/ElementsOfDataScience/blob/master/04_loops.ipynb">Lab 4</a> for reference. You might need to import the <code class="docutils literal notranslate"><span class="pre">NumPy</span></code> module for this homework exercise.</p>
+<p><strong>Exercise 1:</strong> In the lab notebook you have seen how to access the elements of a list one-by-one using a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop. In this excercise you will learn how to append elements to the end of a list. Let’s say we want the list to contain the letters from your name, i.e., the first element of the list is the first letter of your name and so on. Translate the tasks below into Python code:</p>
+<ol class="simple">
+<li><p>In the cell below, start off by creating an empty list called <code class="docutils literal notranslate"><span class="pre">name_list</span></code>. You can do this by typing in the open and close square brakects without anything inside them and assigning it to <code class="docutils literal notranslate"><span class="pre">name_list</span></code>.</p></li>
+<li><p>Create another variable called <code class="docutils literal notranslate"><span class="pre">name</span></code> and assign it a string that contains your first name.</p></li>
+<li><p>Now write a <code class="docutils literal notranslate"><span class="pre">for</span></code> statement that will loop through the letters of your first name.</p></li>
+<li><p>Inside the loop, we want to take the current letter from the <code class="docutils literal notranslate"><span class="pre">name</span></code> string and append it to the list <code class="docutils literal notranslate"><span class="pre">name_list</span></code>. In order to do that we will use the function called <code class="docutils literal notranslate"><span class="pre">append</span></code>. The syntax for <code class="docutils literal notranslate"><span class="pre">append</span></code> is as follows. <code class="docutils literal notranslate"><span class="pre">list1.append(var1)</span></code>. In this example, <code class="docutils literal notranslate"><span class="pre">var1</span></code> will be appended, i.e., added as an element at the end, to the list <code class="docutils literal notranslate"><span class="pre">list1</span></code>.</p></li>
+<li><p>Finally, outside the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement, print the list <code class="docutils literal notranslate"><span class="pre">name_list</span></code>. Remember, indentation is important in Python!</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Exercise 2:</strong> In this exercise, we want to count the number times the word <em>Prince</em> is used in the book <em>War and Peace</em>. Translate the tasks below to Python code.</p>
+<p><strong>a:</strong> Following the instructions from Lab 4, download and open the book <em>War and Peace</em> from <a class="reference external" href="https://www.gutenberg.org">Project Gutenberg</a>. When you open the file, name your file pointer <code class="docutils literal notranslate"><span class="pre">fp</span></code> like you did in the lab for consistency. Also, create a variable called <code class="docutils literal notranslate"><span class="pre">count</span></code> and assign it a value of <code class="docutils literal notranslate"><span class="pre">0</span></code>. (We will use this variable as a counter for the number of times we find the word “Prince”)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>b:</strong> Now we going to write nested <code class="docutils literal notranslate"><span class="pre">for</span></code> loops, <em>i.e.</em>, a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop within a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop. The outer <code class="docutils literal notranslate"><span class="pre">for</span></code> statement is to loop through all the lines in the book. The inner <code class="docutils literal notranslate"><span class="pre">for</span></code> statement is to loop through all the words in each line. We also want to check what each word is, which means we would want an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement inside the inner <code class="docutils literal notranslate"><span class="pre">for</span></code> loop. Remember to first run the code from the previous part before writing and running the code for this.</p>
+<ol class="simple">
+<li><p>Write the outer <code class="docutils literal notranslate"><span class="pre">for</span></code> loop to go through all the lines in the book.</p></li>
+<li><p>Inside this <code class="docutils literal notranslate"><span class="pre">for</span></code> loop, write a statement that will split each line and assign it to a variable called <code class="docutils literal notranslate"><span class="pre">words</span></code>.</p></li>
+<li><p>Now write the inner <code class="docutils literal notranslate"><span class="pre">for</span></code> loop to go through each word in the list <code class="docutils literal notranslate"><span class="pre">words</span></code>.</p></li>
+<li><p>Write an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement in side the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop to check whether the current word is equal to “Prince”.</p></li>
+<li><p>Increment the <code class="docutils literal notranslate"><span class="pre">count</span></code> variable by 1 if the word “Prince” is found. Pay attention to indentation.</p></li>
+<li><p>Finally, print out the value of the variable <code class="docutils literal notranslate"><span class="pre">count</span></code> outside all the loops. You should get an answer of <code class="docutils literal notranslate"><span class="pre">1498</span></code>.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Exercise 3:</strong> In this exercise we will look at another function that is useful for opening and loading files with numeric data into arrays. We will first have to import the <code class="docutils literal notranslate"><span class="pre">Numpy</span></code> module and use the function <code class="docutils literal notranslate"><span class="pre">np.loadtxt</span></code>. We will use these to load a file containing data from a Yamaha scooter and then calculate the averageg miles per gallon for the scooter. Follow the instructions below and convert the tasks into Python code.</p>
+<p><strong>a:</strong> Import the <code class="docutils literal notranslate"><span class="pre">NumPy</span></code> module.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>b:</strong> Download the file <em>Yamaha.txt</em> from this link. Use the same steps as you used in the Lab to download <em>War and Peace</em> from Project Gutenberg. <em>Suggestion:</em> Copy the code from the lab and simply change the url for <code class="docutils literal notranslate"><span class="pre">wget</span></code> to <a class="reference external" href="https://raw.githubusercontent.com/stat10/DS10-Python-HW/master/Data/Yamaha.txt">https://raw.githubusercontent.com/stat10/DS10-Python-HW/master/Data/Yamaha.txt</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>c:</strong> Load the contents of the file <em>Yamaha.txt</em> into an array named <code class="docutils literal notranslate"><span class="pre">yamaha_data</span></code> and print contents of the array. Use the function <code class="docutils literal notranslate"><span class="pre">np.loadtxt</span></code> which is documented <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.loadtxt.html">here</a> to load the file into an array. The syntax should be <code class="docutils literal notranslate"><span class="pre">var</span> <span class="pre">=</span> <span class="pre">np.loadtxt('filename')</span></code>, where <code class="docutils literal notranslate"><span class="pre">var</span></code> would be the array into which the data is loaded and <code class="docutils literal notranslate"><span class="pre">filename</span></code> is the string with the name of the file. Also, use the syntax <code class="docutils literal notranslate"><span class="pre">print(var)</span></code> to print the contents of the array <code class="docutils literal notranslate"><span class="pre">var</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In one of the previous labs and Python HW you have come across arrays. However, we haven’t yet seen a very useful and powerful usecase of <code class="docutils literal notranslate"><span class="pre">NumPy</span></code> arrays, which is being able to access elements of the arrays using an index. By the way, elements of a list (or for that matter, characters in a string) can also be accessed using indices. In Python, the elements of a 2D array, for example the <code class="docutils literal notranslate"><span class="pre">yamaha_data</span></code> array, can be accesses by providing a row index and a column index. One important thing to keep in mind is that in Python indices start from 0 (not 1). The code below creates a 2D array <code class="docutils literal notranslate"><span class="pre">A</span></code>, prints out all of its elements, and shows how to obtain the element in the first row and first column, and second row and fifth column, respectively. Notice that the syntax is <code class="docutils literal notranslate"><span class="pre">array_name[row_index,</span> <span class="pre">column_index]</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">],</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">600</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>  <span class="c1"># prints nothing, so it shows up as an empty line</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>  <span class="c1"># element in first row and first column</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>  <span class="c1"># element in second row and fifth column</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>d:</strong> The data in <em>Yamaha.txt</em> is arranged in 14 rows and 2 columns. The first column contains the <em>odometer reading in miles</em> while the second column contains the <em>amount of gas filled in gallons</em> when the odometer reading was taken. Write code to print out the odometer reading from row 5 and the gallons of gas in row 10. You should get <code class="docutils literal notranslate"><span class="pre">1010.9</span></code> and <code class="docutils literal notranslate"><span class="pre">1.231</span></code>, respectively.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>e:</strong> Now let’s go ahead and calculate the average miles per gallon for the Yamaha scooter.</p>
+<p>To get the miles driven between each gas filling, we have to take a difference of two odometer readings, <em>i.e.</em>, subtract the one at the time of a filling from the one at the next time of filling. Then we would want to divide the miles driven between two fillings by the amount of gas filled to obtain miles per gallon. Finally, we would want to take the mean of the miles per gallon between each of the fillings.</p>
+<p>In terms of array operations, we want to subtract the odometer reading at say index <code class="docutils literal notranslate"><span class="pre">i</span></code> from the one at index <code class="docutils literal notranslate"><span class="pre">i+1</span></code>. This difference gives the distance travelled between two gas fillings. When we divide this distance by the amount of gas filled at the index <code class="docutils literal notranslate"><span class="pre">i+1</span></code>, we get the miles per gallon for that distance. Finally, the average can be computed by using the function <code class="docutils literal notranslate"><span class="pre">np.mean</span></code>.</p>
+<p>Also, note that the <em>Yamaha.txt</em> file has 14 entries, however since we need to take differences between successive entries, we will end up with 13 numbers for miles per gallon. So, the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement to calculate the miles per gallon would need to repeat 13 times. We would also need a way to define the index <code class="docutils literal notranslate"><span class="pre">i</span></code> that goes from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">13</span></code>. Python has a function called <code class="docutils literal notranslate"><span class="pre">range</span></code> that can be used to generate these indices. We will not go into the details of the function <code class="docutils literal notranslate"><span class="pre">range</span></code> right now because we will come back to it again. But the syntax for generating the indicies in a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop is as follows: <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">range(max_num):</span></code>. This line of code will generate <code class="docutils literal notranslate"><span class="pre">max_num</span></code> number of integers that will be assinged to the variable <code class="docutils literal notranslate"><span class="pre">i</span></code> starting from <code class="docutils literal notranslate"><span class="pre">0</span></code> to a value of <code class="docutils literal notranslate"><span class="pre">max_num</span> <span class="pre">-</span> <span class="pre">1</span></code>.</p>
+<p>Translate the tasks below to Python code for calculating the average miles per gallon.</p>
+<ol class="simple">
+<li><p>Create an empty list called <code class="docutils literal notranslate"><span class="pre">mpg</span></code> to hold the miles per gallon computed between each gas filling.</p></li>
+<li><p>Write a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop that repeats as many times as the number of rows in the array <code class="docutils literal notranslate"><span class="pre">yamaha_data</span></code> less one. (<em>Hint:</em> use <code class="docutils literal notranslate"><span class="pre">len(yamaha_data)</span></code> to find the number of rows in <code class="docutils literal notranslate"><span class="pre">yamaha_data</span></code>, then <code class="docutils literal notranslate"><span class="pre">len(yamaha_data)</span> <span class="pre">-</span> <span class="pre">1</span></code> is the maximum number of integers you want to obtain using <code class="docutils literal notranslate"><span class="pre">range</span></code>.)</p></li>
+<li><p>Inside the <code class="docutils literal notranslate"><span class="pre">for</span></code> calculate the current miles per gallon by taking the difference between the odometer reading at <code class="docutils literal notranslate"><span class="pre">i+1</span></code> and <code class="docutils literal notranslate"><span class="pre">i</span></code>, divided by the gas filled at index <code class="docutils literal notranslate"><span class="pre">i+1</span></code>. Assign this value to a variable called <code class="docutils literal notranslate"><span class="pre">curr_mpg</span></code>.</p></li>
+<li><p>Append the <code class="docutils literal notranslate"><span class="pre">curr_mpg</span></code> value to the list <code class="docutils literal notranslate"><span class="pre">mpg</span></code>. See exercise 1 above for the syntax of <code class="docutils literal notranslate"><span class="pre">append</span></code>.</p></li>
+<li><p>Compute the average miles per gallon using the function <code class="docutils literal notranslate"><span class="pre">np.mean</span></code> and print out the value. You should get a value of <code class="docutils literal notranslate"><span class="pre">96.27371246852911</span></code>.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="HW03_arrays.html" title="previous page">Homework 03 Exercises</a>
+    <a class='right-next' id="next-link" href="HW05_dictionaries.html" title="next page">Homework 05 Exercises</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By DS10<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

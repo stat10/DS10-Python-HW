@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 07 Exercises &#8212; DS10 Homeworks</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Homework 08 Exercises" href="HW08_distributions.html" />
+    <link rel="prev" title="Homework 06 Exercises" href="HW06_plotting.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">DS10 Homeworks</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="README.html">
+   DS10 Homeworks
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW01_variables.html">
+   Instructions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW01_variables.html#homework-01-exercises">
+   Homework 01 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW01_variables.html#instructions-for-submitting-the-hw-notebook">
+   Instructions for submitting the HW notebook
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW02_times.html">
+   Homework 02 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW03_arrays.html">
+   Homework 03 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW04_loops.html">
+   Homework 04 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW05_dictionaries.html">
+   Homework 05 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW06_plotting.html">
+   Homework 06 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Homework 07 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW08_distributions.html">
+   Homework 08 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW09_relationships.html">
+   Homework 09 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW10_regression.html">
+   Homework 10 Exercises
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/HW07_dataframes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/stat10/DS10-Python-HW"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/stat10/DS10-Python-HW/master?urlpath=tree/HW07_dataframes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="homework-07-exercises">
+<h1>Homework 07 Exercises<a class="headerlink" href="#homework-07-exercises" title="Permalink to this headline">¶</a></h1>
+<p>The following exercises are based on the material from Lab 7. Feel free to open the Python notebook for <a class="reference external" href="https://colab.research.google.com/github/AllenDowney/ElementsOfDataScience/blob/master/07_dataframes.ipynb">Lab 7</a> for reference.</p>
+<p>Since we will exclusively use the <code class="docutils literal notranslate"><span class="pre">pandas</span></code> library for creating and manipulating dataframes, let’s import it right now. We will also be plotting histograms so will need to import the <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> library as well.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Next, let’s import a CSV file that we will work with. Keeping with the theme of looking at fuel efficiency, we will explore a dataset from the Environmental Protection Agency (EPA). This file contains fuel economy data from vehicle testing done at the EPA’s National Vehicle and Fuel Emissions Laboratory in Ann Arbor, Michigan, and by vehicle manufacturers with oversight by EPA downloaded from <a class="reference external" href="https://www.fueleconomy.gov/feg/download.shtml">here</a>. As needed go through the documentation for the data available at <a class="reference external" href="https://www.fueleconomy.gov/feg/ws/index.shtml#vehicle">this page</a>. The file has already been downloaded and hosted on our Github repository. Simply run the cell below to download.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">&#39;vehicles.csv&#39;</span><span class="p">):</span>
+    <span class="o">!</span>wget https://raw.githubusercontent.com/stat10/DS10-Python-HW/master/Data/vehicles.csv
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now, let’s start exploring!</p>
+<p><strong>Exercise 1a:</strong> Create a dataframe called <code class="docutils literal notranslate"><span class="pre">vehicle_df</span></code> by reading in the <code class="docutils literal notranslate"><span class="pre">vehicles.csv</span></code> file using the <code class="docutils literal notranslate"><span class="pre">pandas</span></code> function called <code class="docutils literal notranslate"><span class="pre">read_csv</span></code> and display the first 5 rows.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>1b:</strong> How many columns does the dataframe have? You might find this from running the <code class="docutils literal notranslate"><span class="pre">head()</span></code> function above. However, one way to do this programmatically is to find the length of the result of the <code class="docutils literal notranslate"><span class="pre">columns</span></code> attribute of the dataframe.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>1c:</strong> How many rows does the dataset have? <em>Suggestion:</em> Use the <code class="docutils literal notranslate"><span class="pre">shape</span></code> attribute of the dataframe. The result of using <code class="docutils literal notranslate"><span class="pre">shape</span></code> attribute is a tuple that contains the rows (element 0) and columns (element 1). This is of course another way to find the number of coulmns in the dataframe.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>1d:</strong> Display all the column names in the dataframe and as needed go through the <a class="reference external" href="https://www.fueleconomy.gov/feg/ws/index.shtml#vehicle">documentation</a> for the dataset to figure out what each coulmn represents.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Exercise 2a:</strong> Find out which column represents the name of the manufacturer of the vehicles listed in the dataset. Then, assign the value of that column to a variable called <code class="docutils literal notranslate"><span class="pre">makes</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>2b:</strong> The <code class="docutils literal notranslate"><span class="pre">makes</span></code> variable contains the value for each row and thus will have 42125 number of entries. Print a list of the names of the different manufacturers that appear in the <code class="docutils literal notranslate"><span class="pre">makes</span></code> variable without repeating their names. Also, find out how many different manufacturers appear in this dataset.</p>
+<p><em>Hint:</em> You could find this information using the function <code class="docutils literal notranslate"><span class="pre">value_counts</span></code>, instead try using the function called <code class="docutils literal notranslate"><span class="pre">unique</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>2c:</strong> Which are the top five manufacturers appearing in this dateset? Also, list the number of entries for each of those top five manufacturers.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Exercise 3a:</strong> Display the summary statistics for the column that represents the combined fuel efficiency of vehicles with fuelType1.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>3b:</strong> There are columns in the dataset representing the fuel efficiency on city roads as well as on highways. On the same plot, show histograms of the city and highway fuel efficiency of all vehicles using a single type of fuel. Make sure to label the axes of the histogram and also provide an appropriate title. Try to make your plot look like the image below.
+<img alt="alt text" src="https://raw.githubusercontent.com/stat10/DS10-Python-HW/master/Images/hist1.png" /></p>
+<p><em>Hint:</em> The <code class="docutils literal notranslate"><span class="pre">hist</span></code> function can be provided a list of arrays instead of a single array. The <code class="docutils literal notranslate"><span class="pre">linewidth</span></code> argument can be used to increase the thickness of the lines representing the bin edges.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Exercise 4a:</strong> As you might notice the histogram is squished to the left due to some outliers which are most likely electric vehicles. The MPG equivalent for electric vehicles is based on a conversion where 33.7 kilowatt-hours of electricity is equivalent to one gallon of gasoline. For some comparisons we might want to leave out the EVs and only look at the actual MPG measure. One way to discard the EVs is simply discard MPG values higher than a threshold, but that leaves us with a question of finding an appropriate threshold. Luckily, the dataset also contains a column that specifies the type of fuel used by the cars.</p>
+<p>Find the column that contains the type of fuel for each vehicle that uses a single fuel and display all the unique values for it.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>4b:</strong> Create a Boolean series called <code class="docutils literal notranslate"><span class="pre">non_ev</span></code> using the column you found in the previous question where the entries are <code class="docutils literal notranslate"><span class="pre">False</span></code> for all vehicles where the type of fuel is electric. Also, print out how many rows contain vehicles that use electricity as fuel.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>4c:</strong> Filter the city and highway fuel efficiency columns using the <code class="docutils literal notranslate"><span class="pre">non_ev</span></code> Boolean series and replot the histogram from above using 20 bins.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="HW06_plotting.html" title="previous page">Homework 06 Exercises</a>
+    <a class='right-next' id="next-link" href="HW08_distributions.html" title="next page">Homework 08 Exercises</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By DS10<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

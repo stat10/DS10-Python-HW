@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 02 Exercises &#8212; DS10 Homeworks</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Homework 03 Exercises" href="HW03_arrays.html" />
+    <link rel="prev" title="Instructions" href="HW01_variables.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">DS10 Homeworks</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="README.html">
+   DS10 Homeworks
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW01_variables.html">
+   Instructions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW01_variables.html#homework-01-exercises">
+   Homework 01 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW01_variables.html#instructions-for-submitting-the-hw-notebook">
+   Instructions for submitting the HW notebook
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Homework 02 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW03_arrays.html">
+   Homework 03 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW04_loops.html">
+   Homework 04 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW05_dictionaries.html">
+   Homework 05 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW06_plotting.html">
+   Homework 06 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW07_dataframes.html">
+   Homework 07 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW08_distributions.html">
+   Homework 08 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW09_relationships.html">
+   Homework 09 Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HW10_regression.html">
+   Homework 10 Exercises
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/HW02_times.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/stat10/DS10-Python-HW"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/stat10/DS10-Python-HW/master?urlpath=tree/HW02_times.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="homework-02-exercises">
+<h1>Homework 02 Exercises<a class="headerlink" href="#homework-02-exercises" title="Permalink to this headline">¶</a></h1>
+<p>The following exercises are based on the material from Lab 2. Feel free to open the Python notebook for <a class="reference external" href="https://colab.research.google.com/github/AllenDowney/ElementsOfDataScience/blob/master/02_times.ipynb">Lab 2</a> for reference. You might need to import the <code class="docutils literal notranslate"><span class="pre">pandas</span></code> and <code class="docutils literal notranslate"><span class="pre">numpy</span></code> modules for this homework exercise. If you need instructions on how to submit the notebook, please look at the <a class="reference external" href="https://colab.research.google.com/github/stat10/DS10-Python-HW/blob/master/HW01_variables.ipynb">HW01_variables</a> notebook.</p>
+<p><strong>Exercise 1:</strong> Using the type <code class="docutils literal notranslate"><span class="pre">Timestamp</span></code> and the methods <code class="docutils literal notranslate"><span class="pre">day_name</span></code> and <code class="docutils literal notranslate"><span class="pre">month_name</span></code>, find the day and month of the date <code class="docutils literal notranslate"><span class="pre">07-05-1990</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Exercise 2</strong>: The <code class="docutils literal notranslate"><span class="pre">Timedelta</span></code> method can be used to add days to time stamp. To add 180 days to a time stamp, say <code class="docutils literal notranslate"><span class="pre">2003-07-12</span></code>, we would use the Timedelta method as:</p>
+<p><code class="docutils literal notranslate"><span class="pre">pd.Timestamp('2003-07-12')</span> <span class="pre">+</span> <span class="pre">pd.Timedelta(days=180)</span></code></p>
+<p>With this in mind, try to solve the following problem.</p>
+<p>A person was born on May 23, 2000. This person’s father is exactly 10,000 days older than them. The father has another child born on July 20, 1998. Find:</p>
+<p><strong>a</strong> What is the father’s birthday?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>b</strong> How many days passed between the father’s birthday and the second child’s birthday?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Exercise 3</strong>: One aspect of Python that is very important is that indentation matters. For example, in the <code class="docutils literal notranslate"><span class="pre">haversine</span></code> function that was constructed in the Lab notebook, the second and third line are indented. As the second line is a comment (i.e. preceeded by #), indentation is not important. However, indentation of the third line is important. You can try not indenting it and see what happens.</p>
+<p>Now, write a function to return the cosine of theta and compute the cosine for <code class="docutils literal notranslate"><span class="pre">theta</span> <span class="pre">=</span> <span class="pre">1</span></code>. <em>Suggestion:</em> Copy the haversine function from lab and modify the name to cosine. Modify the third line to compute the cosine. You should get a result of <code class="docutils literal notranslate"><span class="pre">0.5403023058681398</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Solution</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Exercise 4</strong>: Many airlines use what is known as the “hub and spoke” model for routing traffic. If a passenger wants to fly from a city A to a city B, they fly the passenger from city A to their hub H on one airplane and from their hub H to city B on a different airplane.</p>
+<p>Let us assume you are flying from your home town (city A) to Orlando, Florida (city B) and Boston is the hub (Hub H). Compute the hub and spoke distance (i.e. distance A to H + distance H to B). Compare it to point-to-point distance (i.e. direct distance from A to B). If your home town is in Massachusetts or outside the US, use Columbus, Ohio as your home town. <em>Suggestion:</em> Use the functions <code class="docutils literal notranslate"><span class="pre">haversine</span></code> and <code class="docutils literal notranslate"><span class="pre">haversine_distance</span></code> from the lab notebook for calculating the distances.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Solution </span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="HW01_variables.html" title="previous page">Instructions</a>
+    <a class='right-next' id="next-link" href="HW03_arrays.html" title="next page">Homework 03 Exercises</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By DS10<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
